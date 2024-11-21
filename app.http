@@ -1,0 +1,57 @@
+API-1
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username" : "srikanth",
+    "email" : "srikanth@gmail.com",
+    "password" : "srikanth",
+    "balance" : 500
+}
+
+
+API-2 
+####
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email" : "srikanth@gmail.com",
+    "password" : "srikanth"
+}
+
+
+API-3 
+###
+POST http://localhost:3000/api/transactions
+Content-Type: application/json
+
+{
+    "amount" : 100.00,
+    "transaction_type" : "DEPOSIT",
+    "user": "65bf56f4-b7a7-4301-a012-6aef45c23c5f"
+}
+
+API-4
+###
+GET http://localhost:3000/api/transactions/e4b89e6f-0330-4ad4-b193-36c3e395041c
+
+
+API-5
+###
+PUT http://localhost:3000/api/transactions/8f680988-844e-489e-8a6f-0b26ee3db057
+Content-Type: application/json
+
+{
+    "status" : "COMPLETED"
+}
+
+
+API-6
+###
+GET http://localhost:3000/api/transactions/8f680988-844e-489e-8a6f-0b26ee3db057
+
+API-7
+###
+GET http://localhost:3000/user/account
